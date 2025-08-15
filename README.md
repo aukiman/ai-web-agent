@@ -42,7 +42,7 @@ wget -O aiwebagent-installer.sh https://raw.githubusercontent.com/aukiman/ai-web
   && chmod +x aiwebagent-installer.sh \
   && sudo bash aiwebagent-installer.sh
 
-🛠 Configuration
+## 🛠 Configuration
 
 After install, edit:
 
