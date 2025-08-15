@@ -38,7 +38,7 @@ This project is designed with **policy enforcement** in mind.
 Run the following on your Ubuntu 20.04 or 22.04+ server:
 
 ```bash
-wget -O aiwebagent-installer.sh https://github.com/aukiman/ai-web-agent/blob/main/installer.sh \
+wget -O aiwebagent-installer.sh https://raw.githubusercontent.com/aukiman/ai-web-agent/main/installer.sh \
   && chmod +x aiwebagent-installer.sh \
   && sudo bash aiwebagent-installer.sh
 
