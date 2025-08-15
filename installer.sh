@@ -7,7 +7,7 @@ APP_USER="aiagent"
 APP_DIR="/opt/${APP_NAME}"
 VENV_DIR="${APP_DIR}/.venv"
 SERVICE_NAME="aiwebagent"
-TARBALL_URL="ai-web-agent.tar.gz"
+TARBALL_URL="https://raw.github.com/aukiman/ai-web-agent/main/ai-web-agent.tar.gz"
 PYTHON_BIN="python3"
 # =================
 
