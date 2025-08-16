@@ -47,7 +47,11 @@ echo "[*] Installing Python requirements..."
 sudo -u "${APP_USER}" "${VENV_DIR}/bin/pip" install -r "${APP_DIR}/requirements.txt"
 
 echo "[*] Installing Playwright & browser deps..."
-sudo -u "${APP_USER}" "${VENV_DIR}/bin/python" -m playwright install --with-deps chromium
+# Install OS deps as root
+"${VENV_DIR}/bin/python" -m playwright install-deps chromium
+# Install browser binaries into the venv as the app user
+sudo -u "${APP_USER}" "${VENV_DIR}/bin/python" -m playwright install chromium
+
 
 # 6) Config files (create if missing)
 if [ ! -f "${APP_DIR}/config.yaml" ]; then
